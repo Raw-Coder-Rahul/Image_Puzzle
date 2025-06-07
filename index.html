@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer type="module"></script>
+    <title>Puzzle Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="puzzle-wrapper">
+            <div class="cells"></div>
+            <div class="puzzle"></div>
+            <div class="final-img"></div>
+            <div class="upload-img">
+                <div class="btns">
+                    <button class="img-btn btn random-btn">Get Random Image</button>
+                    <label for="input-file" class="img-btn btn">upload new image</label>
+                    <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+                </div>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-heading">Game Over</div>
+                <div class="modal-text">You WON!!! <span class="attempt">5</span> wrong attempts</div>
+                <button class="modal-btn btn">Start Again!</button>
+            </div>
+        </div>
+        <div class="loader active"><img src="images/loader.gif"></div>
+        <h1 class="heading">Puzzle Quest</h1>
+    </div>
+</body>
+</html>
